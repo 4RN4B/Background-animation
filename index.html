@@ -11,11 +11,16 @@
 <body>
     <div class="container">
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
     </div>
+    <script defer>
+        for (let i = 0; i < 300; i++) {
+            let container = document.querySelector('.container')
+            let element = document.createElement('div')
+            element.setAttribute('class', 'box')
+            container.append(element);
+
+        }
+    </script>
 </body>
 
 </html>
